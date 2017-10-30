@@ -1,0 +1,16 @@
+.band-video {
+  max-width: 50% !important;
+}
+
+.band-socials-content {
+  justify-content: space-between !important;
+}
+
+.social-link {
+  height: initial;
+  width: initial;
+}
+
+.social-link svg {
+  fill: #CA2C33 !important;
+}
