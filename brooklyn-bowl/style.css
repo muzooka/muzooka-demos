@@ -73,6 +73,10 @@
   fill: #CA2C33 !important;
 }
 
+.social-link-button {
+  display: none !important;
+}
+
 .band-name {
   color: #000000 !important;
   font-family: "Montserrat Black" !important;
