@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800&subset=cyrillic,cyrillic-ext,latin-ext');
+
+body {
+  background: #FFFFFF;
+}
+
+h1.band-name {
+  color: #111111;
+  font-family: "Open Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 65px;
+  text-transform: uppercase;
+}
+
+h6.video-card-title {
+  color: #111111;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+}
