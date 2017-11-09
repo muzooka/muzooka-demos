@@ -29,7 +29,7 @@
 .band-name {
   color: #333333 !important;
   font-family: 'LeagueGothic' !important;
-  font-weight: regular !important;
+  font-weight: 400 !important;
   font-size: 62px !important;
   line-height: 62px !important;
 }
