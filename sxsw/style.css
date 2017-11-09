@@ -1,4 +1,12 @@
 @font-face {
+    font-family: 'FontAwesome';
+    src: url('fonts/fontawesome.woff2') format('woff2'),
+         url('fonts/fontawesome.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: LeagueGothic;
     font-weight: regular;
     src: url("fonts/LeagueGothic.otf") format("opentype");
