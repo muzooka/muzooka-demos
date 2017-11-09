@@ -1,0 +1,43 @@
+@font-face {
+    font-family: LeagueGothic;
+    font-weight: regular;
+    src: url("/fonts/LeagueGothic.otf") format("opentype");
+}
+
+.band-video {
+  max-width: 50% !important;
+}
+
+.band-socials-content {
+  justify-content: space-around !important;
+  padding-bottom: 3rem;
+}
+
+.social-link {
+  height: initial;
+  width: initial;
+}
+
+.social-link svg {
+  fill: #366298 !important;
+}
+
+.social-link-button {
+  display: none !important;
+}
+
+.band-name {
+  color: #333333 !important;
+  font-family: 'LeagueGothic' !important;
+  font-weight: regular !important;
+  font-size: 62px !important;
+  line-height: 62px !important;
+}
+
+.video-card-title {
+  color: #333333 !important;
+  font-family: Helvetica Neue, Helvetica, sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+}
