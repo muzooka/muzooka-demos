@@ -10,7 +10,7 @@
     font-family: 'FoundersCondensed';
     src: url('fonts/FoundersGroteskCondensed.woff2') format('woff2'),
          url('fonts/FoundersGroteskCondensed.woff') format('woff');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 }
 
