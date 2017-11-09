@@ -1,15 +1,25 @@
 @font-face {
-    font-family: 'FontAwesome';
-    src: url('fonts/fontawesome.woff2') format('woff2'),
-         url('fonts/fontawesome.woff') format('woff');
+    font-family: 'WorkSans';
+    src: url('fonts/WorkSans-Regular.woff2') format('woff2'),
+         url('fonts/WorkSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: LeagueGothic;
-    font-weight: regular;
-    src: url("fonts/LeagueGothic.otf") format("opentype");
+    font-family: 'FoundersCondensed';
+    src: url('fonts/FoundersGroteskCondensed.woff2') format('woff2'),
+         url('fonts/FoundersGroteskCondensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('fonts/fontawesome.woff2') format('woff2'),
+         url('fonts/fontawesome.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .band-name {
@@ -40,14 +50,6 @@
 
 .social-link-button {
   display: none !important;
-}
-
-.band-name {
-  color: #333333 !important;
-  font-family: 'LeagueGothic' !important;
-  font-weight: 400 !important;
-  font-size: 62px !important;
-  line-height: 62px !important;
 }
 
 .video-card-title {
