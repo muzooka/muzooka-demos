@@ -8,6 +8,10 @@
   display: none !important;
 }
 
+.band-videos {
+  margin: 0 !important;
+}
+
 .band-video {
   max-width: 50% !important;
 }
