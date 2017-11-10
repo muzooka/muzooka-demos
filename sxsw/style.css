@@ -22,6 +22,10 @@
     font-style: normal;
 }
 
+.band-page-header {
+  display: none !important;
+}
+
 .band-name {
 }
 
@@ -64,10 +68,10 @@
 }
 
 @media (min-width: 798px) {
-  .band-video:nth-child(1) {
+  .band-video:nth-child(odd) {
     padding: 0 10px 0 0;
   }
-  .band-video:nth-child(2) {
+  .band-video:nth-child(even) {
     padding: 0 0 0 10px;
   }
 }
