@@ -67,7 +67,7 @@
   line-height: 20px !important;
 }
 
-@media (min-width: 798px) {
+@media (min-width: 768px) {
   .band-video:nth-child(odd) {
     padding: 0 10px 0 0;
   }
