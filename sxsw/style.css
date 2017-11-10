@@ -23,7 +23,14 @@
 }
 
 .band-name {
-  display: none !important;
+}
+
+.band-videos {
+  margin: 0 !important;
+}
+
+.band-video {
+  padding: 0;
 }
 
 .band-socials-content {
