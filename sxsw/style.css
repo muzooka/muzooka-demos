@@ -55,6 +55,10 @@
   fill: #1F439B !important;
 }
 
+.social-link-button {
+  transition: all .2s ease-out;
+}
+
 .video-card-title {
   color: #333333 !important;
   font-family: "WorkSans", Helvetica, sans-serif !important;
