@@ -9,4 +9,4 @@
 - Content is served over Cloudfront and can be accessed directly at https://d3lxix2ia4mrrg.cloudfront.net/ if you need HTTPS
 - Demos can also be accessed at https://muzooka.github.com/muzooka-demos/ which is another good way to get https
 - Demos can take 5 or more minutes to prop
-- If you end up getting a 404 that might get cached in Cloudfront, in which case you will need to create an invalidation
+- If needed the Cloudfront cache can be [invalidated](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html)
