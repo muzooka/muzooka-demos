@@ -22,14 +22,14 @@
 
 .band-name {
   color: #444444;
-  font-family: Helvetica Neue, Helvetiva, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 52px;
   font-weight: bold;
 }
 
 .video-card-title {
   color: #333333;
-  font-family: Helvetica Neue, Helvetiva, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
 }
