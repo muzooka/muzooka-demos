@@ -1,0 +1,46 @@
+.band-video {
+  max-width: 50% !important;
+}
+
+.band-socials-content {
+  justify-content: space-around !important;
+  padding-bottom: 3rem;
+}
+
+.social-link {
+  height: initial;
+  width: initial;
+}
+
+.social-link svg {
+  fill: #200F83 !important;
+}
+
+.social-link-button {
+}
+
+.band-name {
+  color: #444444;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 52px;
+  font-weight: bold;
+}
+
+.video-card-title {
+  color: #333333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.video-card-embed {
+}
+
+/* Website Override */
+
+.social-icons-menu {
+  width: 20% !important;
+}
+.cb-main-menu {
+  width: 80% !important;
+}
