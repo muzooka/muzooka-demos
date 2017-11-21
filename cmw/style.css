@@ -33,3 +33,16 @@
   font-size: 14px;
   line-height: 20px;
 }
+
+.video-card-embed {
+  border: 7px solid #F4982E;
+}
+
+/* Website Override */
+
+.social-icons-menu {
+  width: 20% !important;
+}
+.cb-main-menu {
+  width: 80% !important;
+}
