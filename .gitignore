@@ -2,3 +2,4 @@
 *.un
 *.un~
 *.swo
+.DS_Store
