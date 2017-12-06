@@ -23,8 +23,9 @@ body {
 h1.band-name {
 	color: #000000 !important;
 	font-family: 'Avenir' !important;
-	font-size: 60px;
-	line-height: 82px;
+	font-size: 56px;
+	line-height: 0px !important;
+  padding: 50px 0 20px 0 !important;
 }
 
 h6.video-card-title {
