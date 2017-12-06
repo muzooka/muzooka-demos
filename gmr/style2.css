@@ -16,10 +16,6 @@ body {
   background: white !important;
 }
 
-.mz--embed__modal-background {
-  background: rgba(255,255,255,.8) !important;
-}
-
 h1.band-name {
 	color: #000000 !important;
 	font-family: 'Avenir' !important;
