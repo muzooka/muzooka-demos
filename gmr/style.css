@@ -21,7 +21,6 @@ body {
 }
 
 h1.band-name {
-  text-transform: uppercase;
 	color: #000000 !important;
 	font-family: 'Avenir' !important;
 	font-size: 60px;
