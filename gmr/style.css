@@ -1,31 +1,12 @@
 @font-face {
-  font-family: rubikblack;
-  src: url(/assets/rubik-black-webfont.woff2) format('woff2'), url(/assets/rubik-black-webfont.woff) format('woff');
-  font-weight: 400;
-  font-style: normal
+    font-family: 'Avenir';
+    src: url('fonts/AvenirLT-Roman.eot');
+    src: url('fonts/AvenirLT-Roman.eot?#iefix') format('embedded-opentype'),
+        url('fonts/AvenirLT-Roman.woff') format('woff'),
+        url('fonts/AvenirLT-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
-
-@font-face {
-  font-family: rubikbold;
-  src: url(/assets/rubik-bold-webfont.woff2) format('woff2'), url(/assets/rubik-bold-webfont.woff) format('woff');
-  font-weight: 400;
-  font-style: normal
-}
-
-@font-face {
-  font-family: rubikmedium;
-  src: url(/assets/rubik-medium-webfont.woff2) format('woff2'), url(/assets/rubik-medium-webfont.woff) format('woff');
-  font-weight: 400;
-  font-style: normal
-}
-
-@font-face {
-  font-family: rubikregular;
-  src: url(/assets/rubik-regular-webfont.woff2) format('woff2'), url(/assets/rubik-regular-webfont.woff) format('woff');
-  font-weight: 400;
-  font-style: normal
-}
-
 
 body {
   background: white !important;
@@ -35,23 +16,29 @@ body {
   background: white !important;
 }
 
+.mz--embed__modal-background {
+  background: rgba(255,255,255,.8) !important;
+}
+
 h1.band-name {
-  font-family: rubikblack !important;
-  color: #3d3533;
-  font-size: 45px;
-  font-weight: normal;
   text-transform: uppercase;
-  line-height: 1em;
+	color: #000000 !important;
+	font-family: 'Avenir' !important;
+	font-size: 60px;
+	line-height: 82px;
 }
 
 h6.video-card-title {
-  color: #3A2942 !important;
-  font-family: rubikmedium !important;
+  color: #000000 !important;
+  font-family: 'Avenir' !important;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
 }
 
 .social-link-icon {
   height: 50px;
-  color: #3d3533 !important;
+  color: #00A0E2 !important;
   border-radius: 50em;
   background: white;
   width: 50px;
