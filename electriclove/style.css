@@ -33,16 +33,14 @@
   line-height: 20px !important;
 }
 
+.band-socials-content {
+  justify-content: space-around !important;
+  padding-bottom: 3rem;
+}
+
 .social-link {
   height: initial;
   width: initial;
-}
-
-.social-link-icon {
-  height: 50px;
-  border-radius: 50em;
-  width: 50px;
-  padding: 13px;
 }
 
 .social-link svg {
