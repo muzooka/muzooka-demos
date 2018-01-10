@@ -28,30 +28,16 @@
   max-width: 50% !important;
 }
 
-.band-socials-content {
-  justify-content: space-around !important;
-  padding-bottom: 3rem;
-}
-
-.social-link {
-  height: initial;
-  width: initial;
-}
-
 .social-link svg {
   fill: #4F4F4F !important;
-}
-
-.social-link-button {
-  display: none !important;
 }
 
 .band-name {
   color: #016BB7 !important;
   font-family: 'Oswald', sans-serif;
   font-weight: 600 !important;
-  font-size: 44px !important;
-  line-height: 48px !important;
+  font-size: 50px !important;
+  line-height: 52px !important;
   text-transform: uppercase !important;
 }
 
