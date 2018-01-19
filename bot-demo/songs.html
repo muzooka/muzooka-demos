@@ -153,6 +153,7 @@
           var psid = ids.psid;
           $.ajax({
             method: 'POST',
+            async: false,
             url: 'https://gtaj81ui74.execute-api.us-west-2.amazonaws.com/dev/facebook-bot-dev-webhook', 
             data: JSON.stringify({
               object: 'page',
@@ -165,9 +166,8 @@
                 }]
               }]
             })
-          }).done(function done() {
-            MessengerExtensions.requestCloseBrowser();
-          });
+          })
+          MessengerExtensions.requestCloseBrowser();
         });
       });
     </script>
