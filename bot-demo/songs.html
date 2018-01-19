@@ -142,34 +142,34 @@
 
     <script>
       var submitButton = document.getElementById('submit');
-      var psid;
 
       submitButton.disabled = true;
       window.extAsyncInit = function() {
         submitButton.disabled = false;
-        MessengerExtensions.getUserID(function success(user_ids) {
-          psid = user_ids.psid;
-        });
       };
 
       submitButton.addEventListener('click', function click() {
-        $.ajax({
-          method: 'POST',
-          async: false,
-          url: 'https://gtaj81ui74.execute-api.us-west-2.amazonaws.com/dev/facebook-bot-dev-webhook', 
-          data: JSON.stringify({
-            object: 'page',
-            entry: [{
-              messaging: [{
-                sender: { id: psid },
-                message: {
-                  text: 'report-submitted'
-                }
+        MessengerExtensions.getUserID(function success(user_ids) {
+          var psid = user_ids.psid;
+          $.ajax({
+            method: 'POST',
+            async: false,
+            url: 'https://gtaj81ui74.execute-api.us-west-2.amazonaws.com/dev/facebook-bot-dev-webhook', 
+            data: JSON.stringify({
+              object: 'page',
+              entry: [{
+                messaging: [{
+                  sender: { id: psid },
+                  message: {
+                    text: 'report-submitted'
+                  }
+                }]
               }]
-            }]
-          })
+            })
+          }).done(function done() {
+            MessengerExtensions.requestCloseBrowser();
+          });
         });
-        MessengerExtensions.requestCloseBrowser();
       });
     </script>
   </body>
