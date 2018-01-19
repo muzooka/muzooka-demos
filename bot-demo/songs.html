@@ -4,6 +4,44 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=2, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <style>
+    .container-fluid {
+      padding: 0 0;
+      margin: 0;
+    }
+    .form-group {
+      width: 100%;
+      border-bottom: 1px solid #efefef;
+      margin: 0;
+    }
+    .form-check {
+      background: ;
+      margin: 0;
+      width: 100%;
+      padding: 25px;
+    }
+    .custom-control {
+      margin: 0;
+    }
+    .btn-wrap {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+      height: 70px;
+      padding: 10px 20px;
+      border-top: 1px solid #efefef;
+      background: #fff;
+    }
+    .btn {
+      height: 100%;
+    }
+    .spacer {
+      height: 80px;
+      width: 100%;
+      display: inline-block;
+    }
+  </style>
   </head>
   <body>
     <script>
@@ -16,66 +54,87 @@
         }(document, 'script', 'Messenger'));
     </script>
     <div class="container">
-      <div class="row">
-        <div class="col">
-          <label class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input">
-            <span class="custom-control-indicator"></span>
-            <span class="custom-control-description">Song 1</span>
-          </label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <label class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input">
-            <span class="custom-control-indicator"></span>
-            <span class="custom-control-description">Song 1</span>
-          </label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <label class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input">
-            <span class="custom-control-indicator"></span>
-            <span class="custom-control-description">Song 1</span>
-          </label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <label class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input">
-            <span class="custom-control-indicator"></span>
-            <span class="custom-control-description">Song 1</span>
-          </label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <label class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input">
-            <span class="custom-control-indicator"></span>
-            <span class="custom-control-description">Song 1</span>
-          </label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <label class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input">
-            <span class="custom-control-indicator"></span>
-            <span class="custom-control-description">Song 1</span>
-          </label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <button type="button" class="btn btn-primary" id="submit">Submit</button>
-        </div>
+
+  <div class="row">
+
+    <div class="form-group col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck1">
+        <label class="form-check-label" for="gridCheck1">
+        Hey, there!
+      </label>
       </div>
     </div>
+    <div class="form-group col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck2">
+        <label class="form-check-label" for="gridCheck2">
+        Marc's time to shine
+      </label>
+      </div>
+    </div>
+    <div class="form-group col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck3">
+        <label class="form-check-label" for="gridCheck3">
+        Headin' to the beach
+      </label>
+      </div>
+    </div>
+    <div class="form-group col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck4">
+        <label class="form-check-label" for="gridCheck4">
+        Rock it
+      </label>
+      </div>
+    </div>
+    <div class="form-group col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck5">
+        <label class="form-check-label" for="gridCheck5">
+        Dirty blunder
+      </label>
+      </div>
+    </div>
+    <div class="form-group col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck6">
+        <label class="form-check-label" for="gridCheck6">
+        Yellow bananananana
+      </label>
+      </div>
+    </div>
+    <div class="form-group col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck7">
+        <label class="form-check-label" for="gridCheck7">
+        Muzooka sunny beats
+      </label>
+      </div>
+    </div>
+    <div class="form-group col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck8">
+        <label class="form-check-label" for="gridCheck8">
+        Going fishing tomorrow
+      </label>
+      </div>
+    </div>
+    <div class="form-group col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck9">
+        <label class="form-check-label" for="gridCheck9">
+        Spring it upon me
+      </label>
+      </div>
+    </div>
+    <span class="spacer"></span>
+    <div class="col btn-wrap">
+      <button type="button" class="btn btn-lg btn-primary btn-block" id="submit">Select Songs</button>
+    </div>
+  </div>
+</div>
     <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
