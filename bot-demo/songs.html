@@ -157,7 +157,7 @@
           method: 'POST',
           async: false,
           url: 'https://gtaj81ui74.execute-api.us-west-2.amazonaws.com/dev/facebook-bot-dev-webhook', 
-          data: {
+          data: JSON.stringify({
             object: 'page',
             entry: [{
               messaging: [{
@@ -167,7 +167,7 @@
                 }
               }]
             }]
-          }
+          })
         });
         MessengerExtensions.requestCloseBrowser();
       });
