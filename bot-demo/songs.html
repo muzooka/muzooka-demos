@@ -143,10 +143,11 @@
     <script>
       var submitButton = document.getElementById('submit');
 
-      submitButton.addEventListener('click', function click() {
+      submitButton.disabled = true;
+      window.extAsyncInit = function() {
+        submitButton.disabled = false;
         MessengerExtensions.getUserID(function success(user_ids) {
           var psid = user_ids.psid;
-          MessengerExtensions.requestCloseBrowser(function success(result) {
             $.post('https://gtaj81ui74.execute-api.us-west-2.amazonaws.com/dev/facebook-bot-dev-webhook', JSON.stringify({
               object: 'page',
               entry: [{
@@ -159,7 +160,10 @@
               }]
             }))
           });
-        });
+      };
+
+      submitButton.addEventListener('click', function click() {
+          MessengerExtensions.requestCloseBrowser();
       });
     </script>
   </body>
