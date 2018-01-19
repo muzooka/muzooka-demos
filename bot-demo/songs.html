@@ -149,13 +149,15 @@
         submitButton.disabled = false;
         MessengerExtensions.getUserID(function success(user_ids) {
           var psid = user_ids.psid;
-          alert(psid);
         });
       };
 
       submitButton.addEventListener('click', function click() {
-        MessengerExtensions.requestCloseBrowser(function() {
-          $.post('https://gtaj81ui74.execute-api.us-west-2.amazonaws.com/dev/facebook-bot-dev-webhook', JSON.stringify({
+        $.ajax({
+          method: 'POST',
+          async: false,
+          url: 'https://gtaj81ui74.execute-api.us-west-2.amazonaws.com/dev/facebook-bot-dev-webhook', 
+          data: {
             object: 'page',
             entry: [{
               messaging: [{
@@ -165,8 +167,9 @@
                 }
               }]
             }]
-          }));
+          }
         });
+        MessengerExtensions.requestCloseBrowser();
       });
     </script>
   </body>
