@@ -141,11 +141,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
     <script>
-      const submitButton = document.getElementById('submit');
+      var submitButton = document.getElementById('submit');
 
       submitButton.addEventListener('click', function click() {
         MessengerExtensions.getUserID(function success(user_ids) {
-          const psid = user_ids.psid;
+          var psid = user_ids.psid;
           MessengerExtensions.requestCloseBrowser(function success(result) {
             $.post('https://gtaj81ui74.execute-api.us-west-2.amazonaws.com/dev/facebook-bot-dev-webhook', JSON.stringify({
               object: 'page',
