@@ -149,11 +149,10 @@
       };
 
       submitButton.addEventListener('click', function click() {
-        MessengerExtensions.getUserID(function success(user_ids) {
-          var psid = user_ids.psid;
+        MessengerExtensions.getUserID(function success(ids) {
+          var psid = ids.psid;
           $.ajax({
             method: 'POST',
-            async: false,
             url: 'https://gtaj81ui74.execute-api.us-west-2.amazonaws.com/dev/facebook-bot-dev-webhook', 
             data: JSON.stringify({
               object: 'page',
