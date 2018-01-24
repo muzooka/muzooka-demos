@@ -142,6 +142,8 @@
 
     <script>
       var submitButton = document.getElementById('submit');
+      var urlParams = new URLSearchParams(window.location.search);
+      var pro = urlParams.get('pro');
 
       submitButton.addEventListener('click', function click() {
         MessengerExtensions.getUserID(function success(user_ids) {
@@ -153,7 +155,7 @@
                 messaging: [{
                   sender: { id: psid },
                   message: {
-                    text: 'report-submitted'
+                    text: 'report-submitted-' + pro
                   }
                 }]
               }]
