@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Reem+Kufi');
+
+.band-name {
+  color: #D8396D;
+  font-family: 'Reem Kufi', Helvetica, Arial, sans-serif !important;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 72px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.video-card-title {
+  color: #228993;
+  font-family: 'Reem Kufi', Helvetica, Arial, sans-serif !important;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.social-link {
+  height: initial;
+  width: initial;
+}
+
+.band-socials-content {
+  justify-content: space-around !important;
+  padding-bottom: 3rem;
+}
+
+.social-link svg {
+  fill: #D8396D !important;
+}
+
+.social-link svg:hover {
+  fill: #D8396D !important;
+}
