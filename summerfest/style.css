@@ -2,21 +2,25 @@ body {
   background: white !important;
 }
 
+.mz--embed__modal-background {
+  background: #1B92A6 !important;
+}
+
 .band-page-content {
   background: white !important;
 }
 
 h1.band-name {
-	color: #000000 !important;
-  font-family: 'Londrina Solid', cursive !important;
+	color: #1B92A6 !important;
+  font-family: 'Londrina Solid', sans-serif !important;
 	font-size: 56px;
 	line-height: 0px !important;
   padding: 50px 0 20px 0 !important;
 }
 
 h6.video-card-title {
-  color: #000000 !important;
-  font-family: 'Londrina Solid', cursive !important;
+  color: #F04D4E !important;
+  font-family: 'Londrina Solid', sans-serif !important;
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
