@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+  background: white !important;
+}
+
+.band-page-content {
+  background: white !important;
+}
+
+h1.band-name {
+  font-family: 'Raleway' !important;
+  color: #f0871b;
+  font-size: 45px;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: auto;
+}
+
+h6.video-card-title {
+  color: #f0871b !important;
+  font-family: 'Raleway' !important;
+}
+
+.social-link-icon {
+  height: 50px;
+  color: #f0871b !important;
+  border-radius: 50em;
+  background: white;
+  width: 50px;
+  padding: 13px;
+}
+
+
