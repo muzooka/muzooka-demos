@@ -11,10 +11,10 @@ body {
 h1.band-name {
   font-family: 'Raleway' !important;
   color: #f0871b;
-  font-size: 45px;
+  font-size: 42px;
   font-weight: bold;
   line-height: auto;
-  letter-spacing: -.03em;
+  letter-spacing: -.02em;
 }
 
 h6.video-card-title {
