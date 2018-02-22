@@ -18,8 +18,9 @@ h1.band-name {
 }
 
 h6.video-card-title {
-  color: #f0871b !important;
+  color: #333333 !important;
   font-family: 'Raleway' !important;
+  font-size: 14px;
 }
 
 .social-link-icon {
