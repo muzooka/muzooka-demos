@@ -12,7 +12,7 @@ h1.band-name {
 	color: #1B92A6 !important;
   font-family: 'Londrina Solid', sans-serif !important;
 	font-size: 56px;
-	line-height: 0px !important;
+	line-height: auto !important;
   padding: 20px 0 !important;
   text-transform: uppercase;
 }
