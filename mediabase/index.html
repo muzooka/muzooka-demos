@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaBase - Log in</title>
+    <base href="http://appqa.mediabase.com/">
+
+
+    <link href="/mbapp/Content/bootstrap.css" rel="stylesheet" />
+    <link href="/mbapp/Content/font-awesome.css" rel="stylesheet" />
+
+    <link href="/mbapp/Content/site.css" rel="stylesheet" />
+
+    <link href="/mbapp/Content/application.css" rel="stylesheet" />
+    <link href="/mbapp/Content/FilterPanel.css" rel="stylesheet" />
+    <link href="/mbapp/Scripts/MediaBase/css/Carousel.css" rel="stylesheet" />
+
+    <link href="/mbapp/Content/login.css" rel="stylesheet" />
+    <link href="/mbapp/Scripts/MediaBase/css/advertisement.css" rel="stylesheet" />
+    <link href="/mbapp/Content/accounts.css" rel="stylesheet" />
+
+
+
+    <script src="/mbapp/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="/mbapp/Scripts/Libs/jquery-ui/jquery-ui.min.js"></script>
+    <script src="/mbapp/Scripts/jquery.validate.js"></script>
+    <script src="/mbapp/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="/mbapp/Scripts/modernizr-2.8.3.js"></script>
+    <script src="/mbapp/Scripts/bootstrap.min.js"></script>
+    <script src="/mbapp/Scripts/bootstrap.noconflict.js"></script>
+    <script src="/mbapp/Scripts/respond.min.js"></script>
+    <script src="/mbapp/Scripts/moment.min.js"></script>
+    <script src="/mbapp/Scripts/json2.min.js"></script>
+    <script src="/mbapp/Scripts/underscore.min.js"></script>
+    <script src="/mbapp/Scripts/Libs/jQueryi18n/jquery.i18n.js"></script>
+    <script src="/mbapp/Scripts/Libs/jQueryi18n/jquery.i18n.messagestore.js"></script>
+    <script src="/mbapp/Scripts/Libs/amplify-1.1.2/amplify.min.js"></script>
+    <script src="/mbapp/Scripts/Libs/jquery.bxslider/jquery.bxslider.js"></script>
+    <script src="/mbapp/Scripts/MediaBase/js/core/Constants.js"></script>
+    <script src="/mbapp/Scripts/MediaBase/js/core/Enums.js"></script>
+    <script src="/mbapp/Scripts/MediaBase/js/core/HttpRoutes.js"></script>
+    <script src="/mbapp/Scripts/MediaBase/js/core/PersistenceService.js"></script>
+    <script src="/mbapp/Scripts/MediaBase/js/core/PublicRouteTable.js"></script>
+    <script src="/mbapp/Scripts/MediaBase/js/core/ReportRouteHelper.js"></script>
+    <script src="/mbapp/Scripts/MediaBase/js/core/String.js"></script>
+    <script src="/mbapp/Scripts/MediaBase/js/core/UserPreferencesService.js"></script>
+    <script src="/mbapp/Scripts/MediaBase/js/core/FeaturesDataProvider.js"></script>
+    <script src="/mbapp/Scripts/MediaBase/js/main/SongCardService.js"></script>
+    <script src="/mbapp/Scripts/MediaBase/js/services/AdvertisementService.js"></script>
+    <script src="/mbapp/Scripts/MediaBase/js/widgets/Carousel.js"></script>
+    <script src="/mbapp/Scripts/MediaBase/js/core/LicensingManager.js"></script>
+    <script src="/mbapp/Scripts/MediaBase/js/widgets/app/AdvertisementControl.js"></script>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+
+    <script>
+      (function($, mb) {
+        var baseUrl = "/mbapp/";
+
+        mb.HttpRoutes.setup(baseUrl, mb.PublicRouteTable.routes);
+
+        //Global Variable for PersistenceProvider
+        mb.PersistenceProvider = mb.PersistenceService.init();
+
+        // setup all needed services that need to be setup once
+        mb.SongCardService.setup({
+          songCodeUrl: "http://mbdev.mediabase.com/weblogon/ExternalAuth.asp?ReturnUrl=/mmrweb/include/SongCard/SongCard.asp?songcode={0}",
+          songFormatUrl: "http://mbdev.mediabase.com/weblogon/ExternalAuth.asp?ReturnUrl=/mmrweb/include/SongCard/SongCard.asp?type={0}&amp;amp;format={1}"
+        });
+      })(jQuery, window.MediaBase || (window.MediaBase = {}));
+
+    </script>
+
+
+  </head>
+
+  <body>
+
+
+
+
+    <div class="no-gutters">
+
+      <!--banner-->
+
+
+      <div class="right-side-panel">
+        <div class="login-nav-space"></div>
+        <nav class="navbar navbar-inverse navbar-fixed-top ">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+              <a class="navbar-brand" href="#">
+                <img src="/mbapp/Content/images/mb-logo.png" class="img-responsive" />
+            </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse navbar-right">
+              <ul class="nav navbar-nav">
+
+                <li>
+                  <a href="/mbapp/GeneralInquiry">Contact</a>
+                </li>
+                <li class="dropdown ">
+                  <a href="#" id="login" data-toggle="dropdown" dropdown-toggle>Login</a>
+                  <div class="dropdown-menu login-form">
+                    <div>
+                      <form action="/mbapp/Account/Login?ReturnUrl=%2Fmbapp%2F" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="mfzAhVrKvYkZ4NfPnGGCpWhz-9WKdyseOFLK8YNy4tU7-PJz5dMIwCtoUfj7baJoLcbw5qBd3wBEL8LttJ-4F_pZgiaIYFjDhl4zFFFCHKE1" />
+                        <div>
+                          <label class="control-label" data-locale="Login.UserName">Username</label>
+                          <input class="form-control" data-val="true" data-val-required="The User Name field is required." id="UserName" name="UserName" placeholder="Username" type="text" value="" />
+                          <div class="error-msg">
+                            <span class="field-validation-valid username-error" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
+                          </div>
+                        </div>
+                        <div>
+                          <label class="control-label" data-locale="Login.Password">Password</label>
+                          <input class="form-control" data-val="true" data-val-required="The Password field is required." id="Password" name="Password" placeholder="Password" type="password" />
+                          <div class="error-msg">
+                            <span class="field-validation-valid password-error" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                          </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary login-btn col-xs-12" data-locale="Login.LogIn">Login</button>
+                        <div class="forgot-password-section text-center clearfix">
+                          <a href='/mbapp/Account/ForgotPassword'>
+                                        <span>
+                                            <small>Forgot Password</small>
+                                        </span>
+                                    </a> |
+                          <a href='/mbapp/FAQ'>
+                                        <span for=FAQ_link>
+                                            <small>Frequently Asked Questions?</small>
+                                        </span>
+                                    </a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="hide">
+                  <a href="#contact">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="hide">
+                  <a href="#contact">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="hide">
+                  <a href="#contact">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </li>
+              </ul>
+            </div>
+            <!--/.nav-collapse -->
+          </div>
+        </nav>
+        <div class="login-left-panel">
+          <div class="login-banner-container col-sm-12">
+            <div class="login-banner-container-middle">
+              <div class="login-nav-space"></div>
+              <div>
+                <img src="/mbapp/Scripts/MediaBase/css/images/jake.jpg" class="img-responsive" />
+              </div>
+              <div class="top-10-us">
+
+
+                <img src="/mbapp/Content/images/top10us.png" class="img-responsive" />
+                <img src="/mbapp/Content/images/shazam.png" class="img-responsive" />
+                <img src="/mbapp/Content/images/buzz.png" class="img-responsive" />
+                <img src="/mbapp/Content/images/mscore.png" class="img-responsive" />
+
+
+              </div>
+
+              <div class="col-sm-12 text-center">
+                <button id="mb-play-song" class="btn btn-play"><i class="fa fa-play"></i> Listen to music </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="sub-banner-container">
+
+          <div class="container">
+            <h1>
+              <img src="/mbapp/Content/images/mb-logo.png" class="img-responsive mb-logo" /> Public Charts
+            </h1>
+            <div class="col-sm-12 no-gutters">
+              <div class="col-sm-4">
+                <a href="http://powerplaylist.com" target="_blank" title="POWERPLAYLIST®">
+                  <article class="caption">
+                    <img class="caption__media" src="/mbapp/Content/images/powerplaylist.jpg" />
+                    <div class="caption__overlay">
+                      <div class="caption__overlay-inner">
+                        <h1>
+                          <img src="/mbapp/Content/images/powerplaylist-logo.png" class="img-responsive" />
+                        </h1>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+              <div class="col-sm-4">
+                <article class="caption">
+                  <img class="caption__media" src="/mbapp/Content/images/variety.jpg" />
+                  <div class="caption__overlay">
+                    <div class="caption__overlay-inner">
+                      <h3 class="caption__overlay__title"></h3>
+                      <h1>
+                        <img src="/mbapp/Content/images/varity.png" class="img-responsive" />
+                      </h1>
+                      <p class="caption__overlay__content">
+                        DOWNLOAD PDF
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-sm-4">
+                <article class="caption">
+                  <img class="caption__media" src="/mbapp/Content/images/us today.jpg" />
+                  <div class="caption__overlay">
+                    <div class="caption__overlay-inner">
+                      <img src="/mbapp/Content/images/usa.png" class="img-responsive" />
+                      <p class="caption__overlay__content">
+                        Download PDF
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="american-music-chart">
+          AMERICA’S MUSIC CHARTS
+        </section>
+
+        <section class="ratethemusic">
+            <iframe class="mz--embed" width="100%" height="600" src="https://qc.muzooka.com/embeds/mediabase/charts" frameborder="0" scrolling="no" allowfullscreen allowtransparency></iframe>
+            <script type="text/javascript"> (function(d, t) { var el = d.createElement(t); var s = d.getElementsByTagName(t)[0]; el.type = 'text/javascript'; el.async = true; el.src = 'https://www.muzooka.com/dist/muzooka.js?' + (new Date().getTime()); s.parentNode.insertBefore(el, s); }(document, 'script'));</script>
+        </section>
+
+
+        <section class="about-mediabase">
+
+          <div class="col-sm-12">
+            <div>
+              <h1>
+                <img src="/mbapp/Content/images/360.jpg" /> WE KNOW <span>MUSIC</span>
+              </h1>
+              <p>
+                Mediabase is a 360-degree reporting service, providing vital airplay information and in-depth analytical tools for media professionals. Mediabase defines the success and popularity of recorded music and reports meaningful insight into consumer listening
+                trends in the ever evolving landscape of music consumption.
+              </p>
+            </div>
+
+            <div>
+              <h1>
+
+                <img src="/mbapp/Content/images/analytics.jpg" /> WE KNOW <span>ANALYTICS</span>
+              </h1>
+              <p>
+                Mediabase monitors the music airplay of more than 1,800 media outlets in over 160 markets, as well as incorporating listener behavior in music streaming & selling through Buzzangle, song tagging with Shazam and listener's reaction through Mscore from
+                Media Monitors.
+              </p>
+            </div>
+
+            <div>
+              <h1>
+                <img src="/mbapp/Content/images/chart.jpg" /> WE <span>CHART HITS</span>
+              </h1>
+              <p>
+                Mediabase charts are published weekly in USA Today, Variety and are used on nearly all radio countdown shows and dozens of pop-culture consumer sites.
+              </p>
+            </div>
+          </div>
+
+        </section>
+        <section class="partners">
+          <div class="container">
+            <h1>Our Partners</h1>
+            <div class="col-sm-12">
+              <div class="col-sm-4">
+                <img src="/mbapp/Content/images/ratethemusicgray.png" class="img-responsive" />
+              </div>
+              <div class="col-sm-4">
+                <img src="/mbapp/Content/images/rcs.png" class="img-responsive" />
+              </div>
+              <div class="col-sm-4">
+                <img src="/mbapp/Content/images/mscoregray.png" class="img-responsive" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer>
+          <div class="container">
+            <div class="col-sm-12 footer-top">
+              <div class="col-sm-6 col-md-4">
+                <img src="/mbapp/Content/images/MBLOGO.png" class="img-responsive" />
+                <ul class="social-media">
+                  <li>
+                    <a href="#contact">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                  </li>
+                  <li>
+                    <a href="#contact">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                  </li>
+                  <li>
+                    <a href="#contact">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-sm-6 col-md-4">
+                <h3>Useful links</h3>
+                <ul>
+                  <li>
+                    <a href='/mbapp/FAQ'>FAQ</a>
+                  </li>
+                  <li>
+                    <a href="http://powerplaylist.com" target="_blank" title="POWERPLAYLIST®">POWERPLAYLIST®</a>
+                  </li>
+                </ul>
+              </div>
+
+
+            </div>
+
+            <div class="col-sm-12 footer-bottom">
+              <div class="col-sm-4 col-md-3">
+                &copy;2018 Mediabase
+              </div>
+              <div class="col-sm-8 col-md-9">
+                <ul>
+                  <li>Legal</li>
+                  <li>Privacy</li>
+                  <li>Cookies</li>
+                  <li>About Ads</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+
+
+
+    <script src="/mbapp/Scripts/App/Login.js"></script>
+    <script src="/mbapp/Scripts/MediaBase/js/services/SongCardProvider.js"></script>
+    <script src="/mbapp/Scripts/MediaBase/js/services/AdvertisementService.js"></script>
+    <script src="/mbapp/Scripts/MediaBase/js/main/SongCardService.js"></script>
+    <script src="/mbapp/Scripts/MediaBase/js/widgets/app/SongCardControls.js"></script>
+    <script src="/mbapp/Scripts/MediaBase/js/widgets/GridCommon.js"></script>
+    <script src="/mbapp/Scripts/MediaBase/js/core/RouteTable.js"></script>
+
+
+  </body>
+
+</html>
