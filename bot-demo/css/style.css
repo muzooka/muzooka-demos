@@ -21,7 +21,7 @@ html {
 .banner {
   width: 100%;
   display: block;
-  height: 250px;
+  height: 275px;
   position: relative;
   background-image: url('https://d53lufxrpjz6n.cloudfront.net/images/652198/landscape/16x9/large.jpg?1531168389000');
   background-size: cover;
@@ -43,21 +43,21 @@ html {
 }
 .banner-title {
   font-family: "proxima-nova",sans-serif;
-  font-size: 24px;
+  font-size: 30px;
   color: #FFFFFF;
   letter-spacing: 0;
   line-height: 34px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .banner-subtitle {
   font-family: "proxima-nova",sans-serif;
   opacity: 0.5;
-  font-size: 14px;
+  font-size: 16px;
   color: #FFFFFF;
   font-weight: lighter;
   letter-spacing: 0;
   line-height: 18px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .ticket-link {
   width: 100%;
