@@ -6,6 +6,7 @@
 body {
   width: 100%;
   display: flex; /* or inline-flex */
+  font-family: "proxima-nova",sans-serif;
 }
 html {
   background: #000;
