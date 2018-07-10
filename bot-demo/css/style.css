@@ -42,7 +42,6 @@ html {
   padding: 20px;
 }
 .banner-title {
-  font-family: ProximaNova-Semibold;
   font-size: 24px;
   color: #FFFFFF;
   letter-spacing: 0;
@@ -51,7 +50,6 @@ html {
 }
 .banner-subtitle {
   opacity: 0.5;
-  font-family: ProximaNova-Regular;
   font-size: 14px;
   color: #FFFFFF;
   font-weight: lighter;
@@ -66,7 +64,6 @@ html {
   box-sizing: border-box;
 }
 .ticket-link h2 {
-  font-family: ProximaNova-Semibold;
   font-size: 16px;
   color: #FFFFFF;
   letter-spacing: 0;
@@ -103,7 +100,6 @@ html {
   box-sizing: border-box;
 }
 .promote-links h2 {
-  font-family: ProximaNova-Semibold;
   font-size: 16px;
   color: #FFFFFF;
   letter-spacing: 0;
