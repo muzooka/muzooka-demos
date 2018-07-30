@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'league_gothicregular';
+    src: url('https://d3lxix2ia4mrrg.cloudfront.net/rough-trade-publishing/fonts//leaguegothic-regular-webfont.woff2') format('woff2'),
+        url('https://d3lxix2ia4mrrg.cloudfront.net/rough-trade-publishing/fonts//leaguegothic-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1.band-name {
+  font-size: 3.25rem;
+  font-family: 'league_gothicregular';
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+h6.video-card-title {
+  font-family: Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.social-link-icon {
+  color: #000000 !important;
+}
+

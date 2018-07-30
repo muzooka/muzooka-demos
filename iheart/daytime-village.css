@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:700');
+
+body {
+  background: white;
+}
+
+.band-page-content {
+  background: white !important;
+}
+
+h1.band-name {
+  font-family: 'Oswald', sans-serif;
+  color: #3A2942;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 60px;
+}
+
+h6.video-card-title {
+  color: #3A2942 !important;
+}
+
+.social-link-icon {
+  color: #270034 !important;
+}
+
+.c--spotify-icon,
+.c--soundcloud-icon {
+  display: none !important;
+}
+

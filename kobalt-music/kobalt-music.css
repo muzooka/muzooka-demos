@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('https://d3lxix2ia4mrrg.cloudfront.net/kobalt-music/fonts/HelveticaNeue.eot');
+  src: url('https://d3lxix2ia4mrrg.cloudfront.net/kobalt-music/fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'),
+    url('https://d3lxix2ia4mrrg.cloudfront.net/kobalt-music/fonts/HelveticaNeue.woff') format('woff'),
+    url('https://d3lxix2ia4mrrg.cloudfront.net/kobalt-music/fonts/HelveticaNeue.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('https://d3lxix2ia4mrrg.cloudfront.net/kobalt-music/fonts/HelveticaNeue-Thin.eot');
+  src: url('https://d3lxix2ia4mrrg.cloudfront.net/kobalt-music/fonts/HelveticaNeue-Thin.eot?#iefix') format('embedded-opentype'),
+    url('https://d3lxix2ia4mrrg.cloudfront.net/kobalt-music/fonts/HelveticaNeue-Thin.woff') format('woff'),
+    url('https://d3lxix2ia4mrrg.cloudfront.net/kobalt-music/fonts/HelveticaNeue-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  background: #232526 !important;
+}
+
+h1.band-name {
+  font-family: "Helvetica Neue", sans-serif;
+  color: #FFFFFF !important;
+  font-family: "Helvetica Neue";
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 74px;
+}
+
+h6.video-card-title {
+  color: #999999 !important;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.social-link-icon {
+  color: #FF3702 !important;
+}
+

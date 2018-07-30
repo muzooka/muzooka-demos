@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo:700');
+
+body {
+  background: #FCF2F1 !important;
+}
+
+.band-page-content {
+  background: #FCF2F1 !important;
+}
+
+h1.band-name {
+  color: #00415E !important;
+  font-family: Arvo;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 49px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h6.video-card-title {
+  color: #00415E !important;
+  font-family: Courier;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.social-link-icon {
+  color: #00415E !important;
+}
+

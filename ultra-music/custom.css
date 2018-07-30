@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('https://d3lxix2ia4mrrg.cloudfront.net/ultra-music/fonts/HelveticaNeue.eot');
+  src: url('https://d3lxix2ia4mrrg.cloudfront.net/ultra-music/fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'),
+    url('https://d3lxix2ia4mrrg.cloudfront.net/ultra-music/fonts/HelveticaNeue.woff') format('woff'),
+    url('https://d3lxix2ia4mrrg.cloudfront.net/ultra-music/fonts/HelveticaNeue.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('https://d3lxix2ia4mrrg.cloudfront.net/ultra-music/fonts/HelveticaNeue-Thin.eot');
+  src: url('https://d3lxix2ia4mrrg.cloudfront.net/ultra-music/fonts/HelveticaNeue-Thin.eot?#iefix') format('embedded-opentype'),
+    url('https://d3lxix2ia4mrrg.cloudfront.net/ultra-music/fonts/HelveticaNeue-Thin.woff') format('woff'),
+    url('https://d3lxix2ia4mrrg.cloudfront.net/ultra-music/fonts/HelveticaNeue-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1.band-name {
+  color: #333333;
+  font-size: 50px;
+  font-weight: 100;
+  line-height: 60px;
+}
+
+h6.video-card-title {
+  color: #333333;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+}
+
+.social-link-icon {
+  color: #232020 !important;
+}
