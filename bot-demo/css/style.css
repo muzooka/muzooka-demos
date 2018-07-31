@@ -28,6 +28,7 @@ html {
 }
 .banner.iheart {
   background-image: url('https://d53lufxrpjz6n.cloudfront.net/images/109442/landscape/21x9/large.jpg');
+  height: 375px;
 }
 .banner-gradient {
   width: 100%;
@@ -52,15 +53,34 @@ html {
   line-height: 34px;
   margin-bottom: 10px;
 }
+.banner-title.iheart {
+  font-size: 26px;
+}
 .banner-subtitle {
   font-family: "proxima-nova",sans-serif;
-  opacity: 0.5;
   font-size: 16px;
-  color: #FFFFFF;
+  color: rgba(255,255,255,.5);
   font-weight: lighter;
   letter-spacing: 0;
   line-height: 18px;
   margin-bottom: 10px;
+}
+.banner-para-iheart {
+  border: 1px solid rgba(255,255,255,.1);
+  color: #fff;
+  background: rgba(255,255,255,.05);
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 20px;
+  display: block;
+  text-align: center;
+}
+.banner-para-iheart-img {
+  text-align: center;
+  margin-bottom: 10px;
+  width: 50px !important;
+  height: auto;
+  background: none !important;
 }
 .ticket-link {
   width: 100%;
