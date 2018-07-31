@@ -26,6 +26,9 @@ html {
   background-image: url('https://d53lufxrpjz6n.cloudfront.net/images/652198/landscape/16x9/large.jpg?1531168389000');
   background-size: cover;
 }
+.banner.iheart {
+  background-image: url('https://d53lufxrpjz6n.cloudfront.net/images/109442/landscape/21x9/large.jpg');
+}
 .banner-gradient {
   width: 100%;
   height: 100%;
