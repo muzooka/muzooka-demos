@@ -26,6 +26,9 @@ html {
   background-image: url('https://d53lufxrpjz6n.cloudfront.net/images/652198/landscape/16x9/large.jpg?1531168389000');
   background-size: cover;
 }
+.banner.greta {
+  background-image: url('../images/greta-van-fleet-2017.jpg');
+}
 .banner.iheart {
   background-image: url('https://d53lufxrpjz6n.cloudfront.net/images/109442/landscape/21x9/large.jpg');
   height: 375px;
@@ -107,6 +110,10 @@ html {
 }
 .ticket-form {
   position: relative;
+}
+.ticket-input {
+  padding-right: 90px !important;
+  overflow: hidden;
 }
 .ticket-btn {
   padding: 15px 20px;
