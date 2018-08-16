@@ -21,13 +21,16 @@ html {
 .banner {
   width: 100%;
   display: block;
-  height: 275px;
+  height: 300px;
   position: relative;
   background-image: url('https://d53lufxrpjz6n.cloudfront.net/images/652198/landscape/16x9/large.jpg?1531168389000');
   background-size: cover;
 }
 .banner.greta {
   background-image: url('../images/greta-van-fleet-2017.jpg');
+}
+.banner.eventbrite {
+  background-image: url('../images/black-sheep.jpeg');
 }
 .banner.iheart {
   background-image: url('https://d53lufxrpjz6n.cloudfront.net/images/109442/landscape/21x9/large.jpg');
