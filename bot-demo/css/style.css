@@ -29,6 +29,9 @@ html {
 .banner.greta {
   background-image: url('../images/greta-van-fleet-2017.jpg');
 }
+.banner.show {
+  background-image: url('https://s3.amazonaws.com/muzooka-prod/assets/demos/banner-show-promo.png');
+}
 .banner.eventbrite {
   background-image: url('../images/black-sheep.jpeg');
 }
