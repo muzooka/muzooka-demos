@@ -79,17 +79,26 @@
 
 .band-page-header {
   position: relative;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 .band-name {
   position: absolute;
-  top: -129px;
+  top: -267px;
   color: white !important;
   font-family: 'pf_dintext_pro' !important;
-  font-weight: bold !important;
+  font-weight: 500 !important;
   font-size: 56px !important;
   line-height: 72px !important;
-  text-align: center;
+  left: 0;
+  right: 0;
+  padding-left: 50px;
+  width: 100%;
+  text-align: left !important;
+  margin: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000000 100%);
+  padding-top: 140px;
 }
 
 .band-videos {
@@ -104,6 +113,6 @@
   color: #FFFFFF !important;
   font-family: 'pf_dintext_pro' !important;
   font-size: 18px !important;
-  font-weight: bold !important;
+  font-weight: 400 !important;
   line-height: 20px !important;
 }
