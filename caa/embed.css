@@ -98,7 +98,8 @@
   text-align: left !important;
   margin: 0;
   background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000000 100%);
-  padding-top: 140px;
+  padding-top: 100px;
+  padding-bottom: 40px;
 }
 
 .band-videos {
