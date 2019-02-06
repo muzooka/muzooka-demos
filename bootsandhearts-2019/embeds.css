@@ -28,8 +28,16 @@ body {
   line-height: 19px;
 }
 
+.band-page-header {
+  margin: 1rem !important;
+}
+
 .band-video {
   max-width: 50% !important;
+}
+
+.band-videos {
+  margin: 1rem 2rem !important;
 }
 
 .band-socials-content {
