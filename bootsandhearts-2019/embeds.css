@@ -1,9 +1,8 @@
 @font-face {
-  font-family: 'Impact';
+  font-family: 'impact';
   font-style: normal;
   src: url('https://d3lxix2ia4mrrg.cloudfront.net/bootsandhearts-2019/fonts/impact.eot');
-  src: local('Impact'),
-    url('https://d3lxix2ia4mrrg.cloudfront.net/bootsandhearts-2019/fonts/impact.eot') format('embedded-opentype'),
+  src: url('https://d3lxix2ia4mrrg.cloudfront.net/bootsandhearts-2019/fonts/impact.eot') format('embedded-opentype'),
     url('https://d3lxix2ia4mrrg.cloudfront.net/bootsandhearts-2019/fonts/impact.woff') format('woff');
 }
 
