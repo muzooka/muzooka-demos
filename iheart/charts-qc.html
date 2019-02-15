@@ -424,11 +424,14 @@
 
                             <script src="https://embeds-qc.muzooka.com/muzooka.js"></script>
                             <script>
-                              if (muzooka && muzooka.events) {
-                                muzooka.events.subscribe('click:chart', function(topic, data) {
-                                  alert(data.name + ' clicked');
+                                if (muzooka && muzooka.events) {
+                                muzooka.events.subscribe('/charts', function(topic, data) {
+                                    if (data.meta.eventType === 'click') {
+                                        alert(data.payload.name + ' clicked.');
+                                        console.log(data);
+                                    }
                                 });
-                              }
+                                }
                             </script>
 
                             <style type="text/css">
