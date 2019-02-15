@@ -419,18 +419,19 @@
                     <div class="custom-html-block">
                         <div class="ls-module no-border content-custom-html">
                             <div style="text-align: center;">
-                                <iframe src="https://local.muzooka.com/embeds/iheart/charts" class="mz--embed" width="100%" height="0" frameborder="0" scrolling="auto" allowTransparency="true" allow="autoplay; fullscreen"></iframe>
+                                <iframe id="charts" src="https://local.muzooka.com/embeds/iheart/charts" class="mz--embed" width="100%" height="0" frameborder="0" scrolling="auto" allowTransparency="true" allow="autoplay; fullscreen"></iframe>
                             </div>
-
                             <script src="https://local.muzooka.com/dist/embeds/muzooka.js"></script>
                             <script>
-                              if (muzooka && muzooka.events) {
-                                muzooka.events.subscribe('click:chart', function(topic, data) {
-                                  alert(data.name + ' clicked');
+                                if (muzooka && muzooka.events) {
+                                muzooka.events.subscribe('/charts', function(topic, data) {
+                                    if (data.meta.eventType === 'click') {
+                                        alert(data.payload.name + ' clicked.');
+                                        console.log(data);
+                                    }
                                 });
-                              }
+                                }
                             </script>
-
                             <style type="text/css">
                                 .component-recommended, #taboola-below-article-thumbnails { display: none !important; }
                             </style>
