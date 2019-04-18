@@ -9,48 +9,48 @@
 
     <title>Cover Template for Bootstrap</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
-
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
   </head>
 
-  <body class="text-center">
-
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-
-      <main role="main" class="inner cover">
-        <iframe class="mz--embed" width="100%" height="100%" src="https://embeds.muzooka.com/artists/?fid=25098475544" frameborder="0" scrolling="no" allowfullscreen></iframe>
-        <p>
-          <a href="#" data-mz-embed="artist" data-mz-label="Foo Fighter" data-mz-fid="25098475544">Foo Fighter using Facebook ID</a>
-        </p>
-        <p>
-          <a href="#" data-mz-embed="artist" data-mz-label="Foo Fighter" data-mz-muzooka-id="foofighters">Foo Fighter using Facebook Username</a>
-        </p>
-        <p>
-          <a href="#" data-mz-embed="artist" data-mz-label="Foo Fighter" data-mz-id="5852">Foo Fighter using Legacy Band ID</a>
-        </p>
-
-        <script type="text/javascript"> (function(d, t) { var el = d.createElement(t); var s = d.getElementsByTagName(t)[0]; el.type = 'text/javascript'; el.async = true; el.src = 'https://embeds.muzooka.com/muzooka.js?' + (new Date().getTime()); s.parentNode.insertBefore(el, s); }(document, 'script'));</script>
-      </main>
-
-      <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <p>Demo page for <a href="https://www.muzooka.com/">Muzooka</a></p>
+  <body>
+    <div class="container pt-5">
+      <div class="row">
+        <!-- Content -->
+        <div class="col-12 col-md-8">
+          <iframe class="mz--embed" width="100%" height="1200px" src="https://embeds.muzooka.com/artist/?fid=450131130590&cssUrl=https://d3lxix2ia4mrrg.cloudfront.net/cmw/style.css" frameborder="0" scrolling="no" allowfullscreen></iframe>
         </div>
-      </footer>
+        <!-- Content end -->
+        <!-- Sidebar -->
+        <div class="col-12 col-md-4">
+          <p>
+            <a href="#" data-mz-embed="artist" data-mz-label="Foo Fighter" data-mz-fid="25098475544">Modal using Facebook ID</a>
+          </p>
+          <p>
+            <a href="#" data-mz-embed="artist" data-mz-label="Foo Fighter" data-mz-muzooka-id="foofighters">Modal using Facebook Username</a>
+          </p>
+          <p>
+            <a href="#" data-mz-embed="artist" data-mz-label="Foo Fighter" data-mz-id="5852">Modal using Legacy Band ID</a>
+          </p>
+        </div>
+        <!-- Sidebar end -->
+      </div>
     </div>
 
+    <!-- Muzooka -->
+    <script type="text/javascript">
+      var muzookaConfig = {
+        cssUrl: 'https://d3lxix2ia4mrrg.cloudfront.net/iheart/daytime-village.css',
+        ctaUrl: 'https://www.muzooka.com',
+        ctaImageSrc: 'https://d3lxix2ia4mrrg.cloudfront.net/iheart/iheart-listen-red.png'
+      };
+    </script>
+    <script type="text/javascript"> (function(d, t) { var el = d.createElement(t); var s = d.getElementsByTagName(t)[0]; el.type = 'text/javascript'; el.async = true; el.src = 'https://embeds.muzooka.com/muzooka.js?' + (new Date().getTime()); s.parentNode.insertBefore(el, s); }(document, 'script'));</script>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
