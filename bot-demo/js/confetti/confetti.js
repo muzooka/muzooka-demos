@@ -22,7 +22,7 @@ var isConfettiRunning; //call and returns true or false depending on whether the
 	removeConfetti = removeConfettiInner;
 	isConfettiRunning = isConfettiRunningInner;
 	var supportsAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame;
-	var colors = ["DodgerBlue", "OliveDrab", "Gold", "Pink", "SlateBlue", "LightBlue", "Violet", "PaleGreen", "SteelBlue", "SandyBrown", "Chocolate", "Crimson"]
+	var colors = ["White"]
 	var streamingConfetti = false;
 	var animationTimer = null;
 	var pause = false;
@@ -98,7 +98,7 @@ var isConfettiRunning; //call and returns true or false depending on whether the
 		if (canvas === null) {
 			canvas = document.createElement("canvas");
 			canvas.setAttribute("id", "confetti-canvas");
-			canvas.setAttribute("style", "display:block;z-index:999999;pointer-events:none");
+			canvas.setAttribute("style", "position:fixed;top:0;left:0;display:inline-block;z-index:999999;pointer-events:none");
 			document.body.appendChild(canvas);
 			canvas.width = width;
 			canvas.height = height;
