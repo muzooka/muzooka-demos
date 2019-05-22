@@ -22,7 +22,7 @@ var isConfettiRunning; //call and returns true or false depending on whether the
 	removeConfetti = removeConfettiInner;
 	isConfettiRunning = isConfettiRunningInner;
 	var supportsAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame;
-	var colors = ["White"]
+	var colors = ["#rgba(255,255,255,.5)","#00aced","rgba(255,255,255,1)"]
 	var streamingConfetti = false;
 	var animationTimer = null;
 	var pause = false;
