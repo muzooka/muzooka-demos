@@ -6,7 +6,7 @@
 body {
   width: 100%;
   display: flex; /* or inline-flex */
-  font-family: "proxima-nova",sans-serif;
+  font-family: "proxima-nova", sans-serif;
 }
 html {
   background: #000;
@@ -36,20 +36,20 @@ html {
   overflow: auto;
   height: 300px;
   position: relative;
-  background-image: url('https://d53lufxrpjz6n.cloudfront.net/images/652198/landscape/16x9/large.jpg?1531168389000');
+  background-image: url("https://d53lufxrpjz6n.cloudfront.net/images/652198/landscape/16x9/large.jpg?1531168389000");
   background-size: cover;
 }
 .banner.greta {
-  background-image: url('../images/greta-van-fleet-2017.jpg');
+  background-image: url("../images/greta-van-fleet-2017.jpg");
 }
 .banner.show {
-  background-image: url('https://s3.amazonaws.com/muzooka-prod/assets/demos/banner-show-promo.png');
+  background-image: url("https://s3.amazonaws.com/muzooka-prod/assets/demos/banner-show-promo.png");
 }
 .banner.eventbrite {
-  background-image: url('../images/black-sheep.jpeg');
+  background-image: url("../images/black-sheep.jpeg");
 }
 .banner.iheart {
-  background-image: url('https://d53lufxrpjz6n.cloudfront.net/images/109442/landscape/21x9/large.jpg');
+  background-image: url("https://d53lufxrpjz6n.cloudfront.net/images/109442/landscape/21x9/large.jpg");
   height: 375px;
 }
 .banner-gradient {
@@ -57,9 +57,21 @@ html {
   height: 100%;
   position: relative;
   z-index: 0;
-  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,01) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 01) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
 }
 .banner-content {
@@ -69,9 +81,9 @@ html {
   width: 100%;
 }
 .banner-title {
-  font-family: "proxima-nova",sans-serif;
+  font-family: "proxima-nova", sans-serif;
   font-size: 30px;
-  color: #FFFFFF;
+  color: #ffffff;
   letter-spacing: 0;
   line-height: 34px;
   margin-bottom: 10px;
@@ -80,18 +92,18 @@ html {
   font-size: 22px;
 }
 .banner-subtitle {
-  font-family: "proxima-nova",sans-serif;
+  font-family: "proxima-nova", sans-serif;
   font-size: 16px;
-  color: rgba(255,255,255,.5);
+  color: rgba(255, 255, 255, 0.5);
   font-weight: lighter;
   letter-spacing: 0;
   line-height: 18px;
   margin-bottom: 10px;
 }
 .banner-para-iheart {
-  border: 1px solid rgba(255,255,255,.1);
+  /* border: 1px solid rgba(255, 255, 255, 0.1); */
   color: #fff;
-  background: rgba(255,255,255,.05);
+  background: rgba(255, 255, 255, 0.05);
   -webkit-border-radius: 4px;
   border-radius: 4px;
   display: block;
@@ -103,6 +115,13 @@ html {
   text-align: center;
   margin-bottom: 10px;
   width: 50px !important;
+  height: auto;
+  background: none !important;
+}
+.banner-para-apple-img {
+  text-align: center;
+  margin-bottom: 0px;
+  width: 100px !important;
   height: auto;
   background: none !important;
 }
@@ -121,14 +140,14 @@ html {
 }
 .ticket-link h2 {
   font-size: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   letter-spacing: 0;
   margin-bottom: 15px;
 }
 .ticket-link input {
   background: #000;
   color: #fff;
-  border: 1px solid rgba(255,255,255,.15);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 4px;
   width: 100%;
   margin: 0;
@@ -148,8 +167,8 @@ html {
   right: 0;
   font-size: 14px;
   position: absolute;
-  background: rgba(255,255,255,.1);
-  border: 1px solid rgba(255,255,255,.2);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: #fff;
   top: 0;
 }
@@ -161,7 +180,7 @@ html {
 }
 .promote-links h2 {
   font-size: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   letter-spacing: 0;
   margin-bottom: 15px;
 }
@@ -179,20 +198,19 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 .promote-links-container span:last-child {
   margin-right: 0 !important;
 }
 .promote-links span.fb {
-  background-color: #1877F2;
+  background-color: #1877f2;
 }
 .promote-links span.tw {
   background-color: #1da1f2;
 }
 .promote-links span.ig {
-  background-image: linear-gradient(-200deg, #AD34A7 0%, #FFAC50 100%);
+  background-image: linear-gradient(-200deg, #ad34a7 0%, #ffac50 100%);
 }
 .promote-links span.whatsapp {
-  background-color: #33A74A;
+  background-color: #33a74a;
 }
