@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <title>Select Songs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <style>
+    .form-group {
+      width: 100%;
+      border-bottom: 1px solid #efefef;
+      margin: 0;
+    }
+    .form-check {
+      background: ;
+      margin: 0;
+      width: 100%;
+      padding: 25px;
+    }
+    .custom-control {
+      margin: 0;
+    }
+    .btn-wrap {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+      height: 70px;
+      padding: 10px 20px;
+      border-top: 1px solid #efefef;
+      background: #fff;
+    }
+    .btn {
+      height: 100%;
+    }
+    .spacer {
+      height: 80px;
+      width: 100%;
+      display: inline-block;
+    }
+  </style>
+  </head>
+  <body>
+    <script>
+      (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.com/en_US/messenger.Extensions.js";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'Messenger'));
+    </script>
+    <div class="container">
+
+  <div class="row">
+
+    <div class="form-group col-12">
+      <div class="form-check">
+        <input class="form-check-input check-me" type="checkbox" id="gridCheck1">
+        <label class="form-check-label" for="gridCheck1">
+          10 Million People
+      </label>
+      </div>
+    </div>
+    <div class="form-group col-12">
+      <div class="form-check">
+        <input class="form-check-input check-me" type="checkbox" id="gridCheck2">
+        <label class="form-check-label" for="gridCheck2">
+          Innocent Minds
+      </label>
+      </div>
+    </div>
+    <div class="form-group col-12">
+      <div class="form-check">
+        <input class="form-check-input check-me" type="checkbox" id="gridCheck3">
+        <label class="form-check-label" for="gridCheck3">
+        Kickstarts
+      </label>
+      </div>
+    </div>
+    <div class="form-group col-12">
+      <div class="form-check">
+        <input class="form-check-input check-me" type="checkbox" id="gridCheck4">
+        <label class="form-check-label" for="gridCheck4">
+          Last Ones Standing
+      </label>
+      </div>
+    </div>
+    <div class="form-group col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck5">
+        <label class="form-check-label" for="gridCheck5">
+          Live Life Living
+      </label>
+      </div>
+    </div>
+    <div class="form-group col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck6">
+        <label class="form-check-label" for="gridCheck6">
+          Microphone
+      </label>
+      </div>
+    </div>
+    <div class="form-group col-12">
+      <div class="form-check">
+        <input class="form-check-input check-me" type="checkbox" id="gridCheck7">
+        <label class="form-check-label" for="gridCheck7">
+          Natural Disaster
+      </label>
+      </div>
+    </div>
+    <div class="form-group col-12">
+      <div class="form-check">
+        <input class="form-check-input check-me" type="checkbox" id="gridCheck8">
+        <label class="form-check-label" for="gridCheck8">
+          Only Human
+      </label>
+      </div>
+    </div>
+    <div class="form-group col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck9">
+        <label class="form-check-label" for="gridCheck9">
+          Perfect Replacement
+      </label>
+      </div>
+    </div>
+    <span class="spacer"></span>
+    <div class="col btn-wrap">
+      <button type="button" class="btn btn-lg btn-primary btn-block" id="submit">Submit Setlist</button>
+    </div>
+  </div>
+</div>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <script>
+      var submitButton = document.getElementById('submit');
+      var urlParams = new URLSearchParams(window.location.search);
+      var pro = urlParams.get('pro');
+      var edit = urlParams.get('edit');
+
+      Array.from(document.getElementsByClassName('check-me')).forEach(
+        function(elm) {
+          elm.checked = edit;
+        }
+      );
+
+      submitButton.disabled = true;
+      window.extAsyncInit = function() {
+        submitButton.disabled = false;
+      };
+
+      submitButton.addEventListener('click', function click() {
+        MessengerExtensions.getUserID(function success(ids) {
+          var psid = ids.psid;
+          $.ajax({
+            method: 'POST',
+            async: false,
+            url: 'https://gtaj81ui74.execute-api.us-west-2.amazonaws.com/dev/facebook-bot-dev-webhook', 
+            data: JSON.stringify({
+              object: 'page',
+              entry: [{
+                messaging: [{
+                  sender: { id: psid },
+                  message: {
+                    text: 'report-submitted-' + pro
+                  }
+                }]
+              }]
+            })
+          })
+          MessengerExtensions.requestCloseBrowser();
+        });
+      });
+    </script>
+  </body>
+</html>
+
