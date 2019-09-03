@@ -24,6 +24,7 @@
   line-height: 55px;
   text-align: center;
   text-transform: uppercase;
+  color: #fff;
 }
 
 .video-card-title {
@@ -35,7 +36,7 @@
 }
 
 .band-page-header {
-  margin: 1rem !important;
+  margin: 2rem 1rem !important;
 }
 
 .band-videos {
