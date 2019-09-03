@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+.band-page {
+  background-color: #000;
+  background-image: url('https://d3lxix2ia4mrrg.cloudfront.net/ccma/images/bg.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.band-page .row:first-child {
+  margin: 0;
+}
+
+.band-page-image img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.band-name {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 55px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.video-card-title {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  color: #C6AF70;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.band-page-header {
+  margin: 2rem 1rem !important;
+}
+
+.band-videos {
+  margin: 1rem 2rem !important;
+}
+
+.band-socials-content {
+  justify-content: space-around !important;
+  padding-bottom: 3rem;
+}
+
+.social-link {
+  height: initial;
+  width: initial;
+}
+
+.social-link svg {
+  fill: #fff !important;
+  width: 26px;
+}
+
+.social-link svg:hover {
+    fill: #C6AF70 !important;
+}
