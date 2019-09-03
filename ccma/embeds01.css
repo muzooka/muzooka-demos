@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
 .band-page {
   background-color: #000;
@@ -56,4 +56,8 @@
 .social-link svg {
   fill: #fff !important;
   width: 26px;
+}
+
+.social-link svg:hover {
+    fill: #C6AF70 !important;
 }

@@ -23,7 +23,6 @@
   font-size: 46px;
   line-height: 55px;
   text-align: center;
-  text-transform: uppercase;
   color: #fff;
 }
 
@@ -62,7 +61,7 @@
     fill: #C6AF70 !important;
 }
 
-.band-page-image img {
+.band-page {
     -webkit-animation: fadein .4s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein .4s; /* Firefox < 16 */
         -ms-animation: fadein .4s; /* Internet Explorer */
