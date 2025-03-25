@@ -4,6 +4,7 @@ body {
   padding: 0;
   background-color: #fff;
 }
+
 h1 {
   text-align: center;
   text-transform: uppercase;
@@ -13,12 +14,18 @@ h1 {
   background-color: #fff;
   /* border-bottom: 1px solid #ddd; */
 }
+
+.MuzookaEmbedBody {
+  background-color: #fff;
+  padding: 20px;
+}
+
 .MuzookaEmbedContainer {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
 }
+
 .MuzookaEmbed {
   width: 100%;
   height: 100%;
